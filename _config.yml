@@ -1,7 +1,7 @@
 # The Site Configuration
 
 # Import the theme
-theme: jekyll-theme-chirpy 
+theme: jekyll-theme-chirpy
 
 # Only if your site type is GitHub Project sites and doesn't have a custom domain,
 # change below value to '/projectname'.
@@ -10,16 +10,16 @@ baseurl: ''
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-lang: ko-KR 
+lang: en
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Seoul 
+timezone: Asia/Seoul
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
 # the main title
-title: 개발일지                          
+title: 개발일지
 
 # it will display as the sub-title
 tagline: jmjmjames   # 서브 타이틀 입니다. 설정하면 블로그 첫 페이지 좌측에서 확인 가능합니다.
@@ -30,7 +30,7 @@ description: >-                        # used by seo meta and the atom feed
   and focuses on text presentation.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://jmjmjames.github.io'    
+url: 'https://jmjmjames.github.io'
 
 github:
   username: jmjmjames             # change to your github username
@@ -54,10 +54,10 @@ google_site_verification: google807fd99dbb3a7b1d.html
 
 
 google_analytics:
-  id: 'UA-250906170-1'             
-  pv:           
-    proxy_endpoint:   
-    cache_path:       
+  id: 'UA-250906170-1'
+  pv:
+    proxy_endpoint:
+    cache_path:
 
 # Prefer color scheme setting.
 #
@@ -70,7 +70,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode:   # [light|dark]
+theme_mode: dark # [light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
@@ -83,12 +83,12 @@ img_cdn:
 avatar: '/assets/img/profile.png'
 
 # boolean type, the global switch for ToC in posts.
-toc: true       
-                
+toc: true
+
 disqus:
   comments: true        # boolean type, the global switch for posts comments.
   shortname: 'james-log'    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-  
+
 paginate: 10
 
 # ------------ The following options are not recommended to be modified ------------------
