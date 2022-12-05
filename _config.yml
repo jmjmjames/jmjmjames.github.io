@@ -48,13 +48,13 @@ social:
     # - https://www.facebook.com/username
     - https://www.linkedin.com/in/jong-min-chung-4a5714151/
 
-google_site_verification: 000   # change to your verification string
+google_site_verification: google807fd99dbb3a7b1d.html
 
 # ↑ --------------------------
 
 
 google_analytics:
-  id: '000'              # Google Analytics ID입니다. 이 또한 이후 포스팅에서 다루겠습니다.
+  id: 'UA-250906170-1'             
   pv:           
     proxy_endpoint:   
     cache_path:       
@@ -166,4 +166,4 @@ jekyll-archives:
     tag: tag
   permalinks:
     tag: /tags/:name/
-    category: /categories/:name
+    category: /categories/:name/
