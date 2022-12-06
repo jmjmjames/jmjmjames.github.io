@@ -1,6 +1,5 @@
 ---
 title: "[Java] 기본 자료형과 참조 자료형의 차이"
-subtitle: "Spring boot 2.6 이전과 이후 queryDSL 설정 방법 비교하기 / queryDSL를 이용한 인터페이스"
 categories : Java
 tags : java
 date: 2022-12-06 15:56:00 +0900
@@ -22,8 +21,8 @@ date: 2022-12-06 15:56:00 +0900
 ## 실제 데이터 값의 저장 위치
 
 ---
+<img width="500" src="https://user-images.githubusercontent.com/74996516/205845764-3d1625fa-293f-460b-adae-f55346a6fa39.png">
 
-<img src="assets/img/post/java/2022-12-06/storage-location-comparison.png`">
 
 - 기본 자료형은 스택 메모리에 생성된 공간에 실제 변숫값을 저장한다.
 
