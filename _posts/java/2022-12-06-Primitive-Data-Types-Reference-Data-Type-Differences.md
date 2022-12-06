@@ -21,6 +21,7 @@ date: 2022-12-06 15:56:00 +0900
 ## 실제 데이터 값의 저장 위치
 
 ---
+
 <img width="500" src="https://user-images.githubusercontent.com/74996516/205845764-3d1625fa-293f-460b-adae-f55346a6fa39.png">
 
 
@@ -125,6 +126,8 @@ public class TypeCasting {
 <br>
 
 ### 기본 자료형 간의 연산
+
+---
 
 |       연산        |   결과   |
 |:---------------:|:------:|
