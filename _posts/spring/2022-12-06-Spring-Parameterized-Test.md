@@ -2,7 +2,7 @@
 layout: post
 title: "[Junit5] @ParameterizedTest 사용한다면?"
 subtitle: "통합환경에서 테스트 진행하기 / @SpringBootTest 유의할 점"
-categories : Spring
+categories : Spring Junit5
 tags : [Spring, Junit5]
 date: 2022-12-06 00:22:00 +0900
 ---
@@ -14,7 +14,7 @@ date: 2022-12-06 00:22:00 +0900
 > 현재 테스트 환경은 다음과 같다.  
 > 117개의 sql 게시글이 존재한다.
 >
-> ![img.png](../../assets/img/post/spring/2022-12-06/data-sql-code.png)
+> ![img.png](https://user-images.githubusercontent.com/74996516/205885063-044453b9-90be-477f-8bd7-ec8c2153b21f.png)
 >
 > spring.jpa.defer-datasource-initialization: true  
 > ddl-auto를 먼저 실행하고, 그후 sql 스크립트 파일이 동작한다.
