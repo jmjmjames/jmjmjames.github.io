@@ -1,7 +1,8 @@
 ---
-title: "[Spring JPA] QueryDSL Dependency 추가하는 방법"
+title: "[Spring JPA] Querydsl Dependency 추가하는 방법"
 subtitle: "Spring boot 2.6 이전과 이후 queryDSL 설정 방법 비교하기 / queryDSL를 이용한 인터페이스"
-categories : JPA
+categories : Spring Spring_JPA
+tags: [ Spring JPA, Querydsl]
 date: 2022-12-05 20:28:00 +0900
 ---
 
@@ -139,7 +140,6 @@ jar {
 
 > SELECT 메서드를 제공한다.
 
-
 ```java
 public interface ArticleRepository extends
         JpaRepository<Article, Long>,
@@ -164,7 +164,7 @@ public interface ArticleRepository extends
 
 - QuerydslPredicateExecutor<Entity>
 
-    - ![img.png](../../assets/img/post/jpa/2022-12-05/QuerydslPredicatExecutor.png)
+    - ![img.png](https://user-images.githubusercontent.com/74996516/205884734-ae51c562-f490-43f3-aed4-03e7a8e8e8f1.png)
 
     - Entity, 즉 Article 안에 있는 모든 필드에 대해 검색 기능을 추가한다.
 
@@ -172,7 +172,7 @@ public interface ArticleRepository extends
 
 - QuerydslPredicateExecutor<Q_Entity>
 
-    - ![img.png](../../assets/img/post/jpa/2022-12-05/QuerydslBinderCustomizer.png)
+    - ![img.png](https://user-images.githubusercontent.com/74996516/205884685-ccbe7cc7-17f5-43fb-9df9-bece10a35e11.png)
 
     - Java 8 이상 인터페이스에서 구현이 가능하다. (**default method**)
 
