@@ -1,7 +1,7 @@
 ---
 title: "[Java] 기본 자료형과 참조 자료형의 차이"
 categories : Java
-tags : java
+tags : Java
 date: 2022-12-06 15:56:00 +0900
 ---
 
