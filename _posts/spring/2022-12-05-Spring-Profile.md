@@ -3,7 +3,7 @@ layout: post
 title: "[Spring] application profile 환경 별 설정 분리"
 subtitle: "Spring boot 2.4 이전과 이후 profile 설정 방법 비교하기 / 환경 별 profile 설정 / properties, yaml 파일 형식"
 comments: true
-categories : Spring
+categories : Spring Spring_Boot
 date: 2022-12-05
 ---
 
