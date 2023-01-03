@@ -1,169 +1,63 @@
-# The Site Configuration
-
-# Import the theme
-theme: jekyll-theme-chirpy
-
-# Only if your site type is GitHub Project sites and doesn't have a custom domain,
-# change below value to '/projectname'.
+# SITE CONFIGURATION
 baseurl: ''
+url: 'https://haaeee.github.io'
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
-lang: ko-KR
+# THEME-SPECIFIC CONFIGURATION
+title: SW Developer                                    # site's title
+description: "A website with blog posts and pages"      # used by search engines
+avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
+favicon: assets/favicon.ico                             # Icon displayed in the tab
 
-# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Seoul
+# Header and footer text
+header_text: <h1>SW Developer</h1> <br/><br/> Work hard, be kind and amazing things will happen.  # Change Blog header text
+header_feature_image: assets/img/header/triangular.jpeg
+header_feature_image_responsive: true
+footer_text: >
+  Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/haaeee">Haaeee</a>
 
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# ↓ --------------------------
+# Blog
+excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
+post_navigation: true
+color_image: /assets/img/lineart.png                    # A bit transparent for color posts.
 
-# the main title
-title: 개발일지
+# Features
+# More in the _data folder for share buttons, author and language
+# For layout customization, go to the "_sass > base" folder, and check "_variables.scss"
+katex: true                                             # Enable if using math markup
+mermaid: default                                        # Enable mermaid-js for diagrams, use theme: base, forest, dark, default, neutral
+google_analytics: 'UA-250906170-1'                      # Tracking ID, e.g. "UA-000000-01"
+cookie_consent: false                                   # To respect the usage of cookies
+color_theme: auto                                       # auto, dark or light
 
-# it will display as the sub-title
-tagline: jmjmjames   # 서브 타이틀 입니다. 설정하면 블로그 첫 페이지 좌측에서 확인 가능합니다.
+# Comments
+comments:
+  disqus_shortname:                                     # Your discus shortname for comments
+  cusdis_app_id:                                        # Your cusdis data-app-id
+  utterances:                                           # Enable by filling below information. For more info, go to https://utteranc.es
+    repo:                                               # your public comments repository (e.g. owner/repo)
+    issue-term:                                         # Issue term (e.g. "comment" consider issues with this word in the title as comments)
 
-description: >-                        # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+# PAGINATION
+paginate: 5
+paginate_path: "/blog/page:num"
 
-# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://jmjmjames.github.io'
-
-github:
-  username: jmjmjames             # change to your github username
-
-social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: jmjmjames
-  email: chungjm0711@gmail.com             # change to your email address
-  links:
-    # The first element serves as the copyright owner's link
-    #- https://twitter.com/username      # change to your twitter homepage
-    - https://github.com/jmjmjames       # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    - https://www.linkedin.com/in/jong-min-chung-4a5714151/
-
-google_site_verification: google807fd99dbb3a7b1d.html
-
-# ↑ --------------------------
-
-
-google_analytics:
-  id: 'UA-250906170-1'
-  pv:
-    proxy_endpoint:
-    cache_path:
-
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light  - Use the light color scheme
-#     dark   - Use the dark color scheme
-#
-theme_mode: dark # [light|dark]
-
-# The CDN endpoint for images.
-# Notice that once it is assigned, the CDN url
-# will be added to all image (site avatar & posts' images) paths starting with '/'
-#
-# e.g. 'https://cdn.com'
-img_cdn:
-
-# the avatar on sidebar, support local or CORS resources
-avatar: '/assets/img/profile.png'
-
-# boolean type, the global switch for ToC in posts.
-toc: true
-
-disqus:
-  comments: true        # boolean type, the global switch for posts comments.
-  shortname: 'jmjmjames-githut-io'    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-
-paginate: 10
-
-# ------------ The following options are not recommended to be modified ------------------
-
-kramdown:
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
-    css_class: highlight
-    # default_lang: console
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
-
+# PORTFOLIO
 collections:
-  tabs:
+  portfolio:
     output: true
-    sort_by: order
+    permalink: /:collection/:name
 
-
-defaults:
-  -
-    scope:
-      path: ''          # An empty string here means all files in the project
-      type: posts
-    values:
-      layout: post
-      comments: true    # Enable comments in posts.
-      toc: true         # Display TOC column in posts.
-      # DO NOT modify the following parameter unless you are confident enough
-      # to update the code of all other post links in this project.
-      permalink: /:categories/:year/:month/:day/:title.html
-  -
-    scope:
-      path: _drafts
-    values:
-      comments: false
-  -
-    scope:
-      path: ''
-      type: tabs             # see `site.collections`
-    values:
-      layout: page
-      permalink: /:title/
-      dynamic_title: true    # Hide title in mobile screens.
-
+# BUILD SETTINGS
 sass:
   style: compressed
+plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
+exclude: [".jekyll-cache", ".jekyll-metadata", ".idea", "vendor/*", "assets/node_modules/*"]
 
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  profile: false
-  blanklines: false
-  ignore:
-    envs: [development]
+# theme: type-on-strap                                  # if using the theme as a jekyll theme gem
+remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github
 
-exclude:
-  - '*.gem'
-  - '*.gemspec'
-  - tools
-  - docs
-  - README.md
-  - LICENSE
-  - gulpfile.js
-  - node_modules
-  - '*.json'
 
-jekyll-archives:
-  enabled: [categories, tags]
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/
+# lang
+lang: ko-KR
+# timeZone
+timezone: Asia/Seoul
